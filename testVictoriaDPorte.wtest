@@ -2,3 +2,28 @@ import atletas.*
 import elementos.*
 import disciplinas.*
 
+describe "Pruebas atletas" {
+  test "Victoria disminuye su altura y ahora mide 150" {
+    victoria.nuevaAltura(150)
+    assert.equals(150, victoria.altura())    
+  }
+
+  test "Vctoria cambia de deporte a Judo y su nuevo elemento es el judogi" {
+    victoria.nuevaDisciplina(judo)
+    assert.equals(judo, victoria.disciplina())
+    assert.equals(judogi, victoria.disciplina().elemento())
+    
+  }
+
+  test "Vctoria cambia de deporte a Tenis y su nuevo elemento es la raqueta" {
+    victoria.nuevaDisciplina(tenis)
+    assert.equals(tenis, victoria.disciplina())
+    assert.equals(raqueta, victoria.disciplina().elemento())    
+  }
+
+  test "Victoria aumenta su altura y ahora mide 200" {
+    victoria.nuevaAltura(200)
+    assert.equals(200, victoria.altura())    
+  }
+
+}

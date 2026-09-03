@@ -16,4 +16,7 @@ object judogi {
 
 object stick {
 
+    method costo() {
+        return 100000
+    }
 }

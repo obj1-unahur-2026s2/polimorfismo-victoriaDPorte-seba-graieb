@@ -49,11 +49,15 @@ object judo {
 object hockey {
 
     method presupuesto(){
-        return
+        return 500 * self.entrenadoresRequeridos()
     }
 
     method elemento(){
-        return 
+        return stick 
+    }
+
+    method entrenadoresRequeridos() {
+        return 6
     }
 
 }

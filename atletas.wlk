@@ -27,6 +27,10 @@ object victoria {
         return invitados
     }
 
+    method disciplina() {
+        return disciplina
+    }
+
     method nuevaCantidadDeInvitados(nuevaCant) {
         invitados = nuevaCant
     }
